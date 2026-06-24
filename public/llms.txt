@@ -1,0 +1,74 @@
+# Abhinav Atul — Personal Portfolio
+
+> CS undergraduate at VIT Bhopal (CGPA: 8.71) and IIT Madras BS Data Science, building distributed systems, agentic AI pipelines, and real-time ML applications.
+
+## About
+
+Abhinav Atul is a CS undergraduate at VIT Bhopal (CGPA: 8.71) and IIT Madras BS Data Science, with experience building distributed systems, agentic AI pipelines, and real-time ML applications. Proficient in C++, Python, and Java with strong foundations in DSA, system design, and scalable backend development. Ranked in the top 3% among 43,586 contributors in GSSoC 2026, and actively contributing to open-source projects and hackathons.
+
+## Education
+
+- B.Tech in Computer Science and Engineering — Vellore Institute of Technology, Bhopal (Aug 2024 – Expected May 2028) — CGPA: 8.71/10
+- B.S. in Data Science and Application — Indian Institute of Technology, Madras (Sep 2024 – Present)
+- Intermediate (Class 12) — Rankers International School, Indore (May 2022 – Jun 2024)
+- Matriculation (Class 10) — Delhi Public School, Bhagalpur (Apr 2014 – May 2022)
+
+## Technical Skills
+
+Languages: C++ (Primary), Java, Python, SQL, JavaScript, TypeScript
+Systems: Data Structures & Algorithms, Operating Systems, Distributed Systems, Concurrency, Multi-threading
+Core CS: DBMS, Computer Networks, OOP
+Frameworks & Tools: FastAPI, React, PostgreSQL, Supabase, OpenCV, Git, YOLOv8, Ollama
+AI & ML: On-device LLM Inference (Ollama), Supervised Learning, CNN, Feature Engineering, scikit-learn
+
+## Featured Projects
+
+### RegisterSync AI — Regulatory Compliance Automation
+Multi-agent AI platform ingesting RBI/SEBI PDFs, extracting compliance rules via locally hosted Ollama LLM, and auto-routing tasks to departments — no cloud API dependency. Features conflict-detection and verification agents with 7+ FastAPI endpoints and PyMuPDF chunking.
+Technologies: Python, FastAPI, React, Ollama, PyMuPDF, PostgreSQL
+
+### Smart Transit System
+Distributed real-time transit platform with vehicle tracking, ETA prediction, and passenger analytics across concurrent data streams using 10+ RESTful APIs. Integrated YOLOv8-based crowd detection for real-time passenger flow monitoring at production-grade inference speeds.
+Technologies: Python, FastAPI, PostgreSQL, YOLOv8
+
+### IoT Intrusion Detection System
+End-to-end ML pipeline on CICIDS2017 (2.8M+ records, 78 features) classifying traffic across 7 attack categories. Evaluated Random Forest and KNN with feature selection to handle class imbalance.
+Technologies: Python, scikit-learn, Feature Engineering
+
+### Driver Drowsiness Detection
+Real-time fatigue detection pipeline using CNN and facial landmark analysis, achieving 84.9% accuracy with sub-second alert response on live video feeds.
+Technologies: Python, OpenCV, CNN
+
+### Intelligent Phishing Detector
+A web app built with Streamlit that uses machine learning models like SVM and Random Forest to classify emails in real-time.
+Technologies: Python, Streamlit, Scikit-learn
+
+### UniVerse — Event Portal UI/UX
+A high-fidelity prototype for a campus event portal designed from scratch in Figma during a 24-hour hackathon.
+Technologies: Figma, UI/UX Design
+
+## Experience & Activities
+
+- LINPACK Club — Technical Team Member (Aug 2025 – Present): Contributing to internal web platform development using React and Supabase in a cross-functional team of 10+ members at VIT Bhopal.
+- GirlScript Summer of Code (GSSoC) 2026 — Open Source Contributor: Ranked in the top 3% among 43,586 contributors; contributing features and bug fixes to production JavaScript/React codebases across multiple repositories.
+- Smart India Hackathon 2025: Led backend development for a real-time smart transit analytics system in a 6-member team, integrating distributed data pipelines within a 36-hour build cycle.
+- PyDROIDX Hackathon (Jul 2025) — Built an Intelligent Phishing Email Detection System using SVM, Logistic Regression, and Random Forest with a Streamlit web app.
+- Reflux'25 Hackathon (Jun 2025) — Designed "UniVerse," a user-friendly campus event portal during a 24-hour UX design hackathon using Figma.
+- SoIVIT Hackathon-2025 (Mar 2025) — University-level hackathon with 150+ teams. Advanced to Round 2 and built a community platform.
+- Android Club Winter of Code (Feb 2025) — Month-long open-source fest. Secured Top 25 Contributor rank among 500+ participants.
+
+## Certifications
+
+- Oracle Cloud Infrastructure 2025 Certified Data Science Professional — Oracle
+- Google AI Essentials — Google
+- The Bits and Bytes of Computer Networking — Google
+- Fundamentals of UI/UX Design — Microsoft
+- The AWS Technical Essentials — Simplilearn
+- Career Essentials in Cybersecurity — Microsoft
+
+## Contact
+
+Website: https://abhinav-personal-portfolio.vercel.app
+GitHub: https://github.com/abhinav-atul
+LinkedIn: https://www.linkedin.com/in/abhinav-atul/
+LeetCode: https://leetcode.com/u/abhinav_atul/

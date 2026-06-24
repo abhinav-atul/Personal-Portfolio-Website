@@ -25,13 +25,12 @@ function App() {
     { label: 'About', link: '#about' },
     { label: 'Tech Stack', link: '#tech-stack' },
     { label: 'Qualification', link: '#qualification' },
-    { label: 'Projects', link: '#experience' },
+    { label: 'Projects', link: '#projects' },
     { label: 'Contact', link: '#contact' },
   ];
 
   // Data for the mobile menu's social links
   const socialItems = [
-    { label: 'Twitter', link: 'https://twitter.com' },
     { label: 'GitHub', link: 'https://github.com/abhinav-atul' },
     { label: 'LinkedIn', link: 'https://www.linkedin.com/in/abhinav-atul/' },
   ];
@@ -89,8 +88,9 @@ function App() {
           <div className="hero-text">
             <h1>Hi there <span className="wave">👋</span> <span className="accent-text">I'm</span></h1>
             <h2 className="name">Abhinav Atul</h2>
-            <p>Computer Science student passionate about building intelligent solutions with Machine Learning and Computer Vision. Let's create the future, one line of code at a time!</p>
+            <p>CS undergraduate at VIT Bhopal & IIT Madras, building distributed systems, agentic AI pipelines, and real-time ML applications. Let's create the future, one line of code at a time!</p>
             <div className="hero-buttons">
+              <a href="/assets/resume_3.pdf" target="_blank" rel="noopener noreferrer" className="btn resume-btn"><i className="fas fa-download"></i> Resume</a>
               <a href="https://www.linkedin.com/in/abhinav-atul/" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
               <a href="https://github.com/abhinav-atul" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub"><i className="fa-brands fa-github"></i></a>
               <a href="https://leetcode.com/u/abhinav_atul/" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LeetCode"><i className="fa-solid fa-code"></i></a>
@@ -103,37 +103,35 @@ function App() {
       </main>
 
       <section className="stats">
-        <div className="stat-item"><h3>3+</h3><p>ML Projects</p></div>
-        <div className="stat-item"><h3>10+</h3><p>Github Repos</p></div>
-        <div className="stat-item"><h3>50+</h3><p>Github Contributions</p></div>
-        <div className="stat-item"><h3>20+</h3><p>Leetcode Problems</p></div>
+        <div className="stat-item"><h3>6+</h3><p>ML/AI Projects</p></div>
+        <div className="stat-item"><h3>8.71</h3><p>CGPA</p></div>
+        <div className="stat-item"><h3>Top 3%</h3><p>GSSoC 2026</p></div>
+        <div className="stat-item"><h3>5+</h3><p>Hackathons</p></div>
       </section>
 
       <section id="about" className="content-section">
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
-          <p>I am a dedicated and enthusiastic Computer Science and Engineering student at Vellore Institute of Technology. My passion lies in the fields of Machine Learning and Software Development, where I enjoy tackling complex problems and building practical applications. With a solid foundation in core subjects like Data Structures, Algorithms, and DBMS, I am actively developing my skills through hands-on projects. I am eager to contribute to innovative projects and collaborate with others to build the technology of the future.</p>
+          <p>CS undergraduate at VIT Bhopal (CGPA: 8.71) and IIT Madras BS Data Science, with experience building distributed systems, agentic AI pipelines, and real-time ML applications. Proficient in C++, Python, and Java with strong foundations in DSA, system design, and scalable backend development. Ranked in the top 3% among 43,586 contributors in GSSoC 2026, and actively contributing to open-source projects and hackathons.</p>
         </div>
-      </section>
-
-      <section id="tech-stack" className="content-section">
+      </section>      <section id="tech-stack" className="content-section">
         <h2 className="section-title">My Tech Stack</h2>
-        <p className="section-subtitle">Technologies I’ve been working with recently</p>
+        <p className="section-subtitle">Technologies I've been working with recently</p>
         <div className="tech-icons">
+          <div className="tech-card"><i className="devicon-cplusplus-plain"></i><p>C++</p></div>
           <div className="tech-card"><i className="devicon-python-plain"></i><p>Python</p></div>
           <div className="tech-card"><i className="devicon-java-plain"></i><p>Java</p></div>
-          <div className="tech-card"><i className="devicon-cplusplus-plain"></i><p>C++</p></div>
           <div className="tech-card"><i className="devicon-c-plain"></i><p>C</p></div>
           <div className="tech-card"><i className="devicon-javascript-plain"></i><p>JavaScript</p></div>
           <div className="tech-card"><i className="devicon-typescript-plain"></i><p>TypeScript</p></div>
+          <div className="tech-card"><i className="devicon-fastapi-plain"></i><p>FastAPI</p></div>
           <div className="tech-card"><i className="devicon-react-original"></i><p>React</p></div>
-          <div className="tech-card"><i className="devicon-nodejs-plain"></i><p>Node.js</p></div>
-          <div className="tech-card"><i className="devicon-linux-plain"></i><p>Linux</p></div>
+          <div className="tech-card"><i className="devicon-postgresql-plain"></i><p>PostgreSQL</p></div>
+          <div className="tech-card"><i className="devicon-supabase-plain"></i><p>Supabase</p></div>
+          <div className="tech-card"><i className="devicon-opencv-plain"></i><p>OpenCV</p></div>
           <div className="tech-card"><i className="devicon-git-plain"></i><p>Git</p></div>
           <div className="tech-card"><i className="devicon-docker-plain"></i><p>Docker</p></div>
-          <div className="tech-card"><i className="devicon-kubernetes-plain"></i><p>Kubernetes</p></div>
-          <div className="tech-card"><i className="devicon-latex-original"></i><p>LaTeX</p></div>
-          <div className="tech-card"><i className="devicon-figma-plain"></i><p>Figma</p></div>
+          <div className="tech-card"><i className="devicon-linux-plain"></i><p>Linux</p></div>
         </div>
       </section>
 
@@ -142,26 +140,61 @@ function App() {
         <p className="section-subtitle">Here are some of the projects I'm proud of.</p>
         <div className="projects-grid">
 
-          {/* <ElectricBorder color="#7df9ff" speed={1} chaos={0.5} thickness={2} style={{ borderRadius: 16 }}> */}
+            <div className="project-card">
+              <div className="project-content">
+                <h3>RegisterSync AI</h3>
+                <p>Multi-agent AI platform ingesting RBI/SEBI PDFs, extracting compliance rules via locally hosted Ollama LLM, and auto-routing tasks to departments — no cloud API dependency. Features conflict-detection and verification agents with 7+ FastAPI endpoints.</p>
+                <div className="project-tech">
+                  <span>Python</span><span>FastAPI</span><span>React</span><span>Ollama</span><span>PostgreSQL</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://github.com/abhinav-atul" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i className="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-content">
+                <h3>Smart Transit System</h3>
+                <p>Distributed real-time transit platform with vehicle tracking, ETA prediction, and passenger analytics across concurrent data streams using 10+ RESTful APIs. Integrated YOLOv8-based crowd detection for real-time passenger flow monitoring.</p>
+                <div className="project-tech">
+                  <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>YOLOv8</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://github.com/abhinav-atul" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i className="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-content">
+                <h3>IoT Intrusion Detection System</h3>
+                <p>End-to-end ML pipeline on CICIDS2017 (2.8M+ records, 78 features) classifying traffic across 7 attack categories. Evaluated Random Forest and KNN with feature selection to handle class imbalance.</p>
+                <div className="project-tech">
+                  <span>Python</span><span>Scikit-learn</span><span>Feature Engineering</span>
+                </div>
+                <div className="project-links">
+                  <a href="https://github.com/abhinav-atul" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i className="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+
             <div className="project-card">
               <div className="project-image">
                 <img src="/assets/67a1040cb519f74d5c6cd7f4_thumbnail.250129.jpg" alt="Driver Drowsiness Detection System" />
               </div>
               <div className="project-content">
                 <h3>Driver Drowsiness Detection</h3>
-                <p>  A real-time system built with OpenCV that applies deep learning models to detect driver drowsiness and trigger timely safety alerts.</p>
+                <p>Real-time fatigue detection pipeline using CNN and facial landmark analysis, achieving 84.9% accuracy with sub-second alert response on live video feeds.</p>
                 <div className="project-tech">
-                  <span>Python</span><span>OpenCV</span><span>TensorFlow</span>
+                  <span>Python</span><span>OpenCV</span><span>CNN</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i className="fab fa-github"></i></a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i className="fas fa-external-link-alt"></i></a>
+                  <a href="https://github.com/abhinav-atul" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i className="fab fa-github"></i></a>
                 </div>
               </div>
             </div>
-          {/* </ElectricBorder> */}
 
-          {/* <ElectricBorder color="#7df9ff" speed={1} chaos={0.5} thickness={2} style={{ borderRadius: 16 }}> */}
             <div className="project-card">
               <div className="project-image">
                 <img src="/assets/blog-phishing-sm-twitter.jpg" alt="Phishing Email Detector" />
@@ -173,14 +206,11 @@ function App() {
                   <span>Python</span><span>Streamlit</span><span>Scikit-learn</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i className="fab fa-github"></i></a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i className="fas fa-external-link-alt"></i></a>
+                  <a href="https://github.com/abhinav-atul" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo"><i className="fab fa-github"></i></a>
                 </div>
               </div>
             </div>
-          {/* </ElectricBorder> */}
 
-          {/* <ElectricBorder color="#7df9ff" speed={1} chaos={0.5} thickness={2} style={{ borderRadius: 16 }}> */}
             <div className="project-card">
               <div className="project-image">
                 <img src="/assets/Screenshot 2025-08-26 115053.png" alt="UniVerse Event Portal" />
@@ -196,7 +226,6 @@ function App() {
                 </div>
               </div>
             </div>
-          {/* </ElectricBorder> */}
 
         </div>
       </section>
@@ -210,8 +239,8 @@ function App() {
             <div className="timeline-dot"></div>
             <div className="timeline-content">
               <h3>Bachelor of Technology (B.Tech) in Computer Science and Engineering</h3>
-              <p className="timeline-date">Feb 2024 – Present</p>
-              <p className="timeline-subtitle">Vellore Institute of Technology, Bhopal</p>
+              <p className="timeline-date">Aug 2024 – Expected May 2028</p>
+              <p className="timeline-subtitle">Vellore Institute of Technology, Bhopal — CGPA: 8.71/10</p>
             </div>
           </div>
           <div className="timeline-item">
@@ -246,40 +275,58 @@ function App() {
         <h3 className="subsection-title">Certifications</h3>
         <div className="cert-scroller">
           <div className="cert-track">
+            <div className="cert-card"><h4>Oracle Cloud Infrastructure 2025 Certified Data Science Professional</h4><p>Oracle</p><span>Issued 2025</span></div>
+            <div className="cert-card"><h4>Google AI Essentials</h4><p>Google</p><span>Issued Nov 2024</span></div>
+            <div className="cert-card"><h4>The Bits and Bytes of Computer Networking</h4><p>Google</p><span>Issued 2025</span></div>
             <div className="cert-card"><h4>Fundamentals of UI/UX Design</h4><p>Microsoft</p><span>Issued Feb 2025</span></div>
             <div className="cert-card"><h4>The AWS Technical Essentials</h4><p>Simplilearn</p><span>Issued Jan 2025</span></div>
-            <div className="cert-card"><h4>Google AI Essentials</h4><p>Google</p><span>Issued Nov 2024</span></div>
-            <div className="cert-card"><h4>Python Essentials</h4><p>Vityarthi</p><span>Issued Nov 2024</span></div>
             <div className="cert-card"><h4>Career Essentials in Cybersecurity</h4><p>Microsoft</p><span>Issued Oct 2024</span></div>
-            <div className="cert-card"><h4>Cybersecurity Foundations</h4><p>Project Management Institute</p><span>Issued Oct 2024</span></div>
-            <div className="cert-card"><h4>Python Essential Training</h4><p>LinkedIn</p><span>Issued Sep 2024</span></div>
-            <div className="cert-card"><h4>MATLAB Onramp</h4><p>MATLAB Coding</p><span>Issued Aug 2024</span></div>
             {/* Duplicated for seamless scroll effect */}
+            <div className="cert-card"><h4>Oracle Cloud Infrastructure 2025 Certified Data Science Professional</h4><p>Oracle</p><span>Issued 2025</span></div>
+            <div className="cert-card"><h4>Google AI Essentials</h4><p>Google</p><span>Issued Nov 2024</span></div>
+            <div className="cert-card"><h4>The Bits and Bytes of Computer Networking</h4><p>Google</p><span>Issued 2025</span></div>
             <div className="cert-card"><h4>Fundamentals of UI/UX Design</h4><p>Microsoft</p><span>Issued Feb 2025</span></div>
             <div className="cert-card"><h4>The AWS Technical Essentials</h4><p>Simplilearn</p><span>Issued Jan 2025</span></div>
-            <div className="cert-card"><h4>Google AI Essentials</h4><p>Google</p><span>Issued Nov 2024</span></div>
-            <div className="cert-card"><h4>Python Essentials</h4><p>Vityarthi</p><span>Issued Nov 2024</span></div>
             <div className="cert-card"><h4>Career Essentials in Cybersecurity</h4><p>Microsoft</p><span>Issued Oct 2024</span></div>
-            <div className="cert-card"><h4>Cybersecurity Foundations</h4><p>Project Management Institute</p><span>Issued Oct 2024</span></div>
-            <div className="cert-card"><h4>Python Essential Training</h4><p>LinkedIn</p><span>Issued Sep 2024</span></div>
-            <div className="cert-card"><h4>MATLAB Onramp</h4><p>MATLAB Coding</p><span>Issued Aug 2024</span></div>
           </div>
         </div>
       </section>
 
       <section id="experience" className="content-section">
-        <h2 className="section-title">Projects & Experience</h2>
+        <h2 className="section-title">Experience & Activities</h2>
         <div className="timeline">
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <div className="timeline-content">
-              <h3>Driver Drowsiness Detection System</h3>
-              <p className="timeline-date">Ongoing</p>
-              <p className="timeline-subtitle">Project Exhibition</p>
+              <h3>LINPACK Club — Technical Team Member</h3>
+              <p className="timeline-date">Aug 2025 – Present</p>
+              <p className="timeline-subtitle">VIT Bhopal</p>
               <ul>
-                <li>Developing a Driver Drowsiness Detection System using OpenCV and deep learning techniques to enhance driver safety through real-time monitoring.</li>
-                <li>Implemented facial landmark detection and eye aspect ratio (EAR) analysis to identify signs of fatigue and trigger audible alerts.</li>
-                <li>Integrated the system with a webcam-based interface for continuous, real-time detection and alerting during vehicle operation.</li>
+                <li>Contributing to internal web platform development using React and Supabase in a cross-functional team of 10+ members.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <h3>GirlScript Summer of Code (GSSoC) 2026</h3>
+              <p className="timeline-date">2026</p>
+              <p className="timeline-subtitle">Open Source Contributor</p>
+              <ul>
+                <li>Ranked in the top 3% among 43,586 contributors.</li>
+                <li>Contributing features and bug fixes to production JavaScript/React codebases across multiple repositories.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+            <div className="timeline-content">
+              <h3>Smart India Hackathon 2025</h3>
+              <p className="timeline-date">2025</p>
+              <p className="timeline-subtitle">National Level Hackathon</p>
+              <ul>
+                <li>Led backend development for a real-time smart transit analytics system in a 6-member team.</li>
+                <li>Integrated distributed data pipelines within a 36-hour build cycle.</li>
               </ul>
             </div>
           </div>
@@ -290,9 +337,8 @@ function App() {
               <p className="timeline-date">Jul 2025</p>
               <p className="timeline-subtitle">Android Club, VIT Bhopal</p>
               <ul>
-                <li>Participated in a cybersecurity and machine learning-based workshop and hackathon.</li>
-                <li>Built an "Intelligent Phishing Email Detection System" using models like SVM, Logistic Regression, and Random Forest.</li>
-                <li>Developed a working Streamlit web app for real-time email classification with a high confidence score.</li>
+                <li>Built an "Intelligent Phishing Email Detection System" using SVM, Logistic Regression, and Random Forest.</li>
+                <li>Developed a working Streamlit web app for real-time email classification.</li>
               </ul>
             </div>
           </div>
@@ -300,12 +346,11 @@ function App() {
             <div className="timeline-dot"></div>
             <div className="timeline-content">
               <h3>Reflux'25 Hackathon</h3>
-              <p className="date">Jun 2025</p>
+              <p className="timeline-date">Jun 2025</p>
               <p className="timeline-subtitle">UX Club, VIT Bhopal</p>
               <ul>
                 <li>Designed "UniVerse," a user-friendly portal for campus events, during a 24-hour UX design hackathon.</li>
                 <li>Created the complete UI, user flow, and a high-fidelity prototype from scratch using Figma.</li>
-                <li>Strengthened skills in UI/UX design, rapid prototyping, and collaborative design thinking.</li>
               </ul>
             </div>
           </div>
@@ -316,8 +361,7 @@ function App() {
               <p className="timeline-date">Mar 2025</p>
               <p className="timeline-subtitle">Hostel Committee, VIT Bhopal</p>
               <ul>
-                <li>A university-level hackathon with 150+ teams, featuring an ideation round followed by prototype development.</li>
-                <li>Advanced to Round 2 and built a functional platform addressing community needs like lost item recovery and local service discovery.</li>
+                <li>A university-level hackathon with 150+ teams. Advanced to Round 2 and built a community platform.</li>
               </ul>
             </div>
           </div>
@@ -328,20 +372,7 @@ function App() {
               <p className="timeline-date">Feb 2025</p>
               <p className="timeline-subtitle">Android Club, VIT Bhopal</p>
               <ul>
-                <li>A month-long open-source fest with 500+ participants and 25+ projects.</li>
-                <li>Contributed to multiple repositories and secured a Top 25 Contributor rank.</li>
-              </ul>
-            </div>
-          </div>
-          <div className="timeline-item">
-            <div className="timeline-dot"></div>
-            <div className="timeline-content">
-              <h3>MATLABverse Nextwave Hackathon</h3>
-              <p className="timeline-date">Dec 2024</p>
-              <p className="timeline-subtitle">Linpack Club, VIT Bhopal</p>
-              <ul>
-                <li>A challenging hackathon where our team created a women's safety alert website.</li>
-                <li>Successfully built and deployed a functional website through GitHub Pages.</li>
+                <li>Month-long open-source fest with 500+ participants. Secured Top 25 Contributor rank.</li>
               </ul>
             </div>
           </div>
