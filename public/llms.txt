@@ -68,7 +68,7 @@ Technologies: Figma, UI/UX Design
 
 ## Contact
 
-Website: https://abhinav-personal-portfolio.vercel.app
+Website: https://abhinavatul.vercel.app
 GitHub: https://github.com/abhinav-atul
 LinkedIn: https://www.linkedin.com/in/abhinav-atul/
 LeetCode: https://leetcode.com/u/abhinav_atul/

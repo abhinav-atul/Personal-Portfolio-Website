@@ -1,8 +1,8 @@
 # robots.txt for Abhinav Atul's Portfolio
-# https://abhinav-personal-portfolio.vercel.app
+# https://abhinavatul.vercel.app
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://abhinav-personal-portfolio.vercel.app/sitemap.xml
+Sitemap: https://abhinavatul.vercel.app/sitemap.xml
