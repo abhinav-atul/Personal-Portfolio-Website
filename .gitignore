@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Local reports and documents
+Resume_June26.pdf
+SEO_ACTIONS.md
+seo_report.pdf
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
